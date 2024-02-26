@@ -1,3 +1,5 @@
+import SocialLink from "@/components/ui/social-link";
+
 export default function Home() {
   return (
     <main>
@@ -20,6 +22,11 @@ export default function Home() {
           </span>
           ?
         </p>
+        <div className="mt-8 grid grid-cols-3 gap-8">
+          <SocialLink name="twitter" href="https://twitter.com/keell0renz" />
+          <SocialLink name="github" href="https://github.com/keell0renz/" />
+          <SocialLink name="telegram" href="https://t.me/keellorenz" />
+        </div>
       </div>
     </main>
   );
