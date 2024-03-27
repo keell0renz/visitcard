@@ -22,10 +22,27 @@ export default function Home() {
           </span>
           ?
         </p>
-        <div className="mt-8 grid grid-cols-3 gap-8">
-          <SocialLink name="twitter" href="https://twitter.com/keell0renz" />
-          <SocialLink name="github" href="https://github.com/keell0renz/" />
-          <SocialLink name="telegram" href="https://t.me/keellorenz" />
+        <div className="mt-8 grid grid-cols-4 gap-8">
+          <SocialLink
+            platform="twitter"
+            href="https://twitter.com/keell0renz"
+            name="Twitter"
+          />
+          <SocialLink
+            platform="github"
+            href="https://github.com/keell0renz/"
+            name="GitHub"
+          />
+          <SocialLink
+            platform="telegram"
+            href="https://t.me/keellorenz"
+            name="Telegram"
+          />
+          <SocialLink
+            platform="linkedin"
+            href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
+            name="LinkedIn"
+          />
         </div>
       </div>
     </main>
