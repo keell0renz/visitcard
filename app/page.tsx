@@ -15,7 +15,7 @@ export default function Home() {
       <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[1px] w-1/4 blur-sm" />
       <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
       <p className="text-lg text-foreground/60 font-normal text-justify mt-4">
-        So maybe we can build some projects{" "}
+        So maybe we can build something{" "}
         <span className="bg-clip-text bg-gradient-to-r from-red-800 via-pink-600 to-blue-800">
           together
         </span>
