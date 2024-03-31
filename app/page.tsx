@@ -2,7 +2,7 @@ import SocialLink from "@/components/ui/social-link";
 
 export default function Home() {
   return (
-    <main className="p-4 max-w-7xl mx-auto relative w-full pt-20 md:pt-0 flex flex-col justify-center items-center h-[60vh]">
+    <main className="p-4 max-w-7xl mx-auto relative w-full pt-10 lg:pt-24 flex flex-col justify-center items-center">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50 min-h-24">
         I love building crazy{" "}
         <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500">
