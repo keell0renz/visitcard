@@ -14,6 +14,7 @@ export default function SocialLink({
         width="1em"
         height="1em"
         viewBox="0 0 24 24"
+        className="h-5 w-5"
       >
         <path
           fill="currentColor"
@@ -59,6 +60,7 @@ export default function SocialLink({
     ),
     linkedin: (
       <svg
+        className="h-5 w-5"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
@@ -95,11 +97,11 @@ export default function SocialLink({
   return (
     <a
       href={href}
-      className="flex flex-row justify-center items-center border rounded-full py-2 px-3 hover:bg-secondary"
+      className="flex flex-col items-center justify-center rounded-full p-2 hover:bg-secondary"
       target="_blank"
     >
       {socialIcons[platform]}
-      <p className="ml-2">{name}</p>
+      {/* <p className="ml-2">{name}</p> */}
     </a>
   );
 }
