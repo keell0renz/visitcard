@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Bohdan Agarkov",
   description: "My personal space, lol",
 
-  metadataBase: new URL("https://keell0renz.com"),
+  metadataBase: new URL("https://www.keell0renz.com"),
 
   icons: {
     icon: "/favicon.ico",
@@ -18,28 +18,19 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Bohdan Agarkov - @keell0renz",
     description: "Generative AI and full-stack web developer.",
     siteId: "1723373966490849281",
     creator: "@keell0renz",
     creatorId: "1723373966490849281",
-    images: ["https://keell0renz.com/profile-hat-cropped.png"], // Must be an absolute URL
   },
 
   openGraph: {
     title: "Bohdan Agarkov - @keell0renz",
     description: "Generative AI and full-stack web developer.",
     url: "https://keell0renz.com",
-    type: "website",
-    images: [
-      {
-        url: "https://keell0renz.com/profile-hat-cropped.png",
-        width: 1024,
-        height: 238,
-        alt: "Bohdan Agarkov - @keell0renz",
-      },
-    ],
+    type: "website"
   },
 };
 
