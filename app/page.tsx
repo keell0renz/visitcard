@@ -53,25 +53,19 @@ export default function Home() {
             </a>
           </div>
           <div className="flex flex-row space-x-1">
+            <SocialLink platform="email" href="mailto:bogdan122305@gmail.com" />
             <SocialLink
               platform="twitter"
               href="https://twitter.com/keell0renz"
-              name="Twitter"
             />
             <SocialLink
               platform="github"
               href="https://github.com/keell0renz/"
-              name="GitHub"
             />
-            <SocialLink
-              platform="telegram"
-              href="https://t.me/keellorenz"
-              name="Telegram"
-            />
+            <SocialLink platform="telegram" href="https://t.me/keellorenz" />
             <SocialLink
               platform="linkedin"
               href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
-              name="LinkedIn"
             />
           </div>
         </div>
