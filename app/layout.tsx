@@ -24,13 +24,22 @@ export const metadata: Metadata = {
     siteId: "1723373966490849281",
     creator: "@keell0renz",
     creatorId: "1723373966490849281",
+    images: ["https://www.keell0renz.com/lorenz.png"], // Must be an absolute URL
   },
 
   openGraph: {
     title: "Bohdan Agarkov - @keell0renz",
     description: "Generative AI and full-stack web developer.",
     url: "https://keell0renz.com",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "https://www.keell0renz.com/lorenz.png",
+        width: 700,
+        height: 520,
+        alt: "Bohdan Agarkov - @keell0renz",
+      },
+    ],
   },
 };
 
