@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Bohdan Agarkov - @keell0renz",
     description: "Generative AI and full-stack web developer.",
     siteId: "1723373966490849281",
