@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Bohdan Agarkov",
   description: "My personal space, lol",
 
-  metadataBase: new URL("https://www.keellorenz.com"),
+  metadataBase: new URL("https://keellorenz.com"),
 
   icons: {
     icon: "/favicon.ico",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteId: "1723373966490849281",
     creator: "@keell0renz",
     creatorId: "1723373966490849281",
-    images: ["https://www.keellorenz.com/lorenz.png"], // Must be an absolute URL
+    images: ["https://keellorenz.com/lorenz.png"], // Must be an absolute URL
   },
 
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.keellorenz.com/lorenz.png",
+        url: "https://keellorenz.com/lorenz.png",
         width: 700,
         height: 520,
         alt: "Bohdan Agarkov - @keell0renz",
