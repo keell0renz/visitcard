@@ -1,4 +1,5 @@
 import SocialLink from "@/components/ui/social-link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
         </span>
         ?
       </p>
-      <article className="w-8/12 pt-16 mx-auto flex flex-col">
-        <div className="flex flex-col lg:flex-row justify-between items-center">
-          <div className="flex flex-col md:flex-row justify-start items-center space-x-2">
+      <article className="w-8/12 pt-6 md:pt-16 mx-auto flex flex-col">
+        <div className="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0">
+          <div className="flex flex-col md:flex-row justify-start items-center space-x-2 space-y-2 md:space-y-0">
             <h1 className="text-xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 hover:bg-gradient-to-r hover:from-blue-500 hover:via-pink-400 hover:to-red-500">
               Bohdan Agarkov
             </h1>
@@ -80,12 +81,12 @@ export default function Home() {
             Tiny Fish
           </a>
           , business student at Universiteit van Amsterdam. A happy owner of a
-          sweet black cat Felix. AI enthusiast, learning deep learning.
-        </div>
-        <div className="text-md text-neutral-300 pt-4 text-justify">
-          Looking forward to build some crazy shit together!
+          sweet black cat Felix. Curious about autonomous AI and AGI.
         </div>
       </article>
+      <section className="pt-8 block md:hidden">
+        <Image src="/qr.svg" alt="QR Code" width={200} height={200} />
+      </section>
     </main>
   );
 }
