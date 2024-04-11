@@ -7,7 +7,7 @@ export default function Home() {
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50 min-h-24">
         I love building crazy{" "}
         <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500">
-          shit
+          stuff
         </span>
         .
       </h1>
@@ -80,8 +80,9 @@ export default function Home() {
           >
             Tiny Fish
           </a>
-          , business student at Universiteit van Amsterdam. A happy owner of a
-          sweet black cat Felix. Curious about autonomous AI and AGI.
+          , business student at Universiteit van Amsterdam.{" "}
+          {/*A happy owner of a sweet black cat Felix -- I love you Felix! Just hided you from pig landlords. <3 */}
+          . Curious about autonomous AI and AGI.
         </div>
       </article>
       <section className="pt-8 block md:hidden">
