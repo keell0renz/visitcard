@@ -82,7 +82,7 @@ export default function Home() {
           </a>
           , business student at Universiteit van Amsterdam.{" "}
           {/*A happy owner of a sweet black cat Felix -- I love you Felix! Just hided you from pig landlords. <3 */}
-          . Curious about autonomous AI and AGI.
+          Curious about autonomous AI and AGI.
         </div>
       </article>
       <section className="pt-8 block md:hidden">
