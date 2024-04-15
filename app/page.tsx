@@ -1,5 +1,6 @@
+import { Button } from "@/components/ui/button";
 import SocialLink from "@/components/ui/social-link";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -69,6 +70,14 @@ export default function Home() {
               href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
             />
           </div>
+          <div className="block md:hidden">
+            <Button
+              asChild
+              className="bg-gradient-to-r from-red-800 via-pink-600 to-blue-800 text-white"
+            >
+              <Link href="/qr">QR Code</Link>
+            </Button>
+          </div>
         </div>
         <div className="text-md text-neutral-300 pt-4 text-justify">
           Generative AI and full-stack web developer, software development
@@ -85,9 +94,6 @@ export default function Home() {
           Curious about autonomous AI and AGI.
         </div>
       </article>
-      <section className="pt-8 block md:hidden">
-        <Image src="/qr.svg" alt="QR Code" width={200} height={200} />
-      </section>
     </main>
   );
 }
