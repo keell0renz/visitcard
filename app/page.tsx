@@ -1,7 +1,5 @@
 import Share from "@/components/share";
-import { Button } from "@/components/ui/button";
 import SocialLink from "@/components/ui/social-link";
-import Link from "next/link";
 
 export default function Home() {
   return (
