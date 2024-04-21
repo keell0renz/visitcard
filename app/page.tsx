@@ -32,13 +32,6 @@ export default function Home() {
             <p className="text-sm text-muted-foreground font-light">
               [ˈboɦdan ˈaɡarkov]
             </p>
-            {/* <a
-              className="text-sm text-muted-foreground font-light hover:text-blue-500"
-              href="mailto:bogdan122305@gmail.com"
-              target="_blank"
-            >
-              bogdan122305@gmail.com
-            </a> */}
             <a
               className="text-sm text-muted-foreground font-light hover:text-blue-500"
               href="https://www.uva.nl/"
