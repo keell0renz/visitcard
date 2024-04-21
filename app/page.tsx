@@ -1,3 +1,4 @@
+import Share from "@/components/share";
 import { Button } from "@/components/ui/button";
 import SocialLink from "@/components/ui/social-link";
 import Link from "next/link";
@@ -26,7 +27,7 @@ export default function Home() {
       <article className="w-8/12 pt-6 md:pt-16 mx-auto flex flex-col">
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0">
           <div className="flex flex-col md:flex-row justify-start items-center space-x-2 space-y-2 md:space-y-0">
-            <h1 className="text-xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 hover:bg-gradient-to-r hover:from-blue-500 hover:via-pink-400 hover:to-red-500">
+            <h1 className="text-xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
               Bohdan Agarkov
             </h1>
             <p className="text-sm text-muted-foreground font-light">
@@ -63,14 +64,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
             />
           </div>
-          <div className="block md:hidden">
-            <Button
-              asChild
-              className="bg-gradient-to-r from-red-800 via-pink-600 to-blue-800 text-white"
-            >
-              <Link href="/qr">QR Code</Link>
-            </Button>
-          </div>
+          <Share />
         </div>
         <div className="text-md text-neutral-300 pt-4 text-justify">
           Generative AI and full-stack web developer, software development
