@@ -38,13 +38,6 @@ export default function Home() {
             >
               @ UvA
             </a>
-            <a
-              className="text-sm text-muted-foreground font-light hover:text-blue-500"
-              href="https://docs.agentql.com/"
-              target="_blank"
-            >
-              @ Tiny Fish Inc.
-            </a>
           </div>
           <div className="flex flex-row space-x-1">
             <SocialLink platform="email" href="mailto:bogdan122305@gmail.com" />
@@ -65,16 +58,8 @@ export default function Home() {
           <Share />
         </div>
         <div className="text-md text-neutral-300 pt-4 text-justify">
-          Generative AI and full-stack web developer, software development
-          intern at{" "}
-          <a
-            className="hover:text-blue-500"
-            href="https://docs.agentql.com/"
-            target="_blank"
-          >
-            Tiny Fish
-          </a>
-          , business student at Universiteit van Amsterdam.{" "}
+          Generative AI and full-stack web developer, business student at
+          Universiteit van Amsterdam.{" "}
           {/*A happy owner of a sweet black cat Felix -- I love you Felix! Just hided you from pig landlords. <3 */}
           Curious about autonomous AI and AGI.
         </div>
