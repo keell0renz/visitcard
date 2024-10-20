@@ -38,13 +38,13 @@ export default function Home() {
             >
               @ UvA
             </a>
-            <a
+            {/* <a
               className="text-sm text-muted-foreground font-light hover:text-blue-500"
               href="https://multion.ai/"
               target="_blank"
             >
               @ MultiOn
-            </a>
+            </a> */}
           </div>
           <div className="flex flex-row space-x-1">
             <SocialLink platform="email" href="mailto:bogdan122305@gmail.com" />
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div className="text-md text-neutral-300 pt-4 text-justify">
           Generative AI and full-stack web developer, business student at
-          Universiteit van Amsterdam. SWE Intern at MultiOn. A happy owner of a sweet black cat Felix.
+          Universiteit van Amsterdam. A happy owner of a sweet black cat Felix.
           Curious about autonomous AI and AGI.
         </div>
       </article>
