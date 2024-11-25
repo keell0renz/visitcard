@@ -15,7 +15,7 @@ export const timeline = [
   {
     company: "Tiny Fish",
     title: "Software Engineering Intern",
-    date: "Mar 2024 - Aug 2024",
+    date: "May 2024 - Aug 2024",
     description:
       "Tiny Fish is a startup developing AI solutions for web extraction and automation.",
     responsibilities: [
