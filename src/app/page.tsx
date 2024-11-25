@@ -1,6 +1,5 @@
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
-import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
@@ -9,17 +8,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Container>
-      <span className="text-4xl">👋</span>
-      <Heading className="font-black">Hello there! I&apos;m John</Heading>
-      <Paragraph className="max-w-xl mt-4">
-        I&apos;m a full-stack developer that loves{" "}
-        <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
+      <Heading className="font-black">Hello there! I&apos;m Bohdan</Heading>
+      <Paragraph className="max-w-2xl mt-4">
+        I&apos;m a Generative AI and full-stack web developer, currently
+        pursuing business studies at the Universiteit van Amsterdam.
       </Paragraph>
-      <Paragraph className="max-w-xl mt-4">
-        I&apos;m a senior software engineer with{" "}
-        <Highlight>7 years of experience</Highlight> building scalable web apps
-        that are performance optimized and good looking.
+      <Paragraph className="max-w-2xl mt-4">
+        In summer 2024 I have went through an internship at AgentQL, a Silicon
+        Valley startup led by ex-Meta employees, developing advanced AI-based
+        web scraping and automation software.
+      </Paragraph>
+      <Paragraph className="max-w-2xl mt-4">
+        Then, I have worked for MultiOn, a Silicon Valley startup developing
+        autonomous AI agents which navigate the web. There I have earned my
+        first $1000.
       </Paragraph>
       <Heading
         as="h2"

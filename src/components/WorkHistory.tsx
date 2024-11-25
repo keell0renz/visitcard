@@ -3,25 +3,21 @@ import { timeline } from "@/constants/timeline";
 import React from "react";
 import { Paragraph } from "./Paragraph";
 import { Heading } from "./Heading";
-import {
-  IconCheck,
-  IconCheckbox,
-  IconCircleCheckFilled,
-} from "@tabler/icons-react";
+import { IconCircleCheckFilled } from "@tabler/icons-react";
 
 export const WorkHistory = () => {
   return (
     <div>
       {timeline.map((item, index) => (
         <div
-          className="flex md:flex-row flex-col space-y-10 md:space-y-0 space-x-10 my-20 relative"
+          className="flex md:flex-row flex-col space-y-10 md:space-y-0 space-x-10 my-10 relative"
           key={`timeline-${index}`}
         >
           <Paragraph className="w-40">{item.date}</Paragraph>
           <div>
             <Heading
               as="h5"
-              className="text-lg md:text-lg lg:text-lg text-emerald-500"
+              className="text-lg md:text-lg lg:text-lg font-black"
             >
               {item.company}
             </Heading>
