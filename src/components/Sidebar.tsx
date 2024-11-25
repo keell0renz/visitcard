@@ -78,9 +78,10 @@ export const Navigation = ({
         Socials
       </Heading>
       {socials.map((link: Navlink) => (
-        <Link
+        <a
           key={link.href}
           href={link.href}
+          target="_blank"
           className={twMerge(
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           )}
@@ -92,7 +93,7 @@ export const Navigation = ({
             )}
           />
           <span>{link.label}</span>
-        </Link>
+        </a>
       ))}
     </div>
   );

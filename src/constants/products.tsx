@@ -47,7 +47,7 @@ export const products = [
     href: "https://github.com/keell0renz/multion-pydantic",
     title: "MultiOn-Pydantic",
     description:
-      "A wrapper around MultiOn API which allows user to define Pydantic schemas and receive filled objects with data, just like in Instructor.",
+      "A wrapper around MultiOn API which allows user to define Pydantic schemas and receive filled objects with data, just like in the Instructor library.",
     thumbnail: multionpydantic,
     images: [multionpydantic],
     stack: ["Python", "Pydantic", "MultiOn"],

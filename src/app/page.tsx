@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Container>
-      <Heading className="font-black">Hello there! I&apos;m Bohdan</Heading>
+      <Heading className="font-black">Hi! I&apos;m Bohdan</Heading>
       <Paragraph className="max-w-2xl mt-4">
         I&apos;m a Generative AI and full-stack web developer, currently
         pursuing business studies at the{" "}
