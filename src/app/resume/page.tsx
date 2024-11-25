@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Container>
-      <Heading className="font-black">Work History</Heading>
+      <Heading className="font-black">Experience</Heading>
       <WorkHistory />
     </Container>
   );
