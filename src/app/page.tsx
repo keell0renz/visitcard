@@ -11,26 +11,50 @@ export default function Home() {
       <Heading className="font-black">Hello there! I&apos;m Bohdan</Heading>
       <Paragraph className="max-w-2xl mt-4">
         I&apos;m a Generative AI and full-stack web developer, currently
-        pursuing business studies at the Universiteit van Amsterdam.
+        pursuing business studies at the{" "}
+        <a
+          href="https://www.uva.nl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          University of Amsterdam
+        </a>
+        .
       </Paragraph>
       <Paragraph className="max-w-2xl mt-4">
-        In summer 2024 I have went through an internship at AgentQL, a Silicon
-        Valley startup led by ex-Meta employees, developing advanced AI-based
-        web scraping and automation software.
+        In summer 2024 I have went through an internship at{" "}
+        <a
+          href="https://agentql.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          Tiny Fish
+        </a>
+        , a Silicon Valley startup led by ex-Meta employees, developing advanced
+        AI-based web scraping and automation software.
       </Paragraph>
       <Paragraph className="max-w-2xl mt-4">
-        Then, I have worked for MultiOn, a Silicon Valley startup developing
-        autonomous AI agents which navigate the web. There I have earned my
-        first $1000.
+        Then, I have worked for{" "}
+        <a
+          href="https://multion.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+          MultiOn
+        </a>
+        , a Silicon Valley startup developing autonomous AI agents which
+        navigate the web. There I have earned my first $1000.
       </Paragraph>
       <Heading
         as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
+        className="font-black text-lg md:text-lg lg:text-lg mt-10 mb-4"
       >
         What I&apos;ve been working on
       </Heading>
       <Products />
-      <TechStack />
     </Container>
   );
 }

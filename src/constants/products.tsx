@@ -11,7 +11,6 @@ export const products = [
     thumbnail: llmos,
     images: [llmos],
     stack: ["LangGraph", "LangCode", "Chainlit", "Claude"],
-    slug: "llm-os",
     content: (
       <div>
         <p>
@@ -31,7 +30,6 @@ export const products = [
     thumbnail: langcode,
     images: [langcode],
     stack: ["Python", "IPykernel", "Jupyter Client"],
-    slug: "langcode",
     content: (
       <div>
         <p>
@@ -53,7 +51,6 @@ export const products = [
     thumbnail: multionpydantic,
     images: [multionpydantic],
     stack: ["Python", "Pydantic", "MultiOn"],
-    slug: "multion-pydantic",
     content: (
       <div>
         <p>

@@ -9,13 +9,13 @@ import {
 export const socials = [
   {
     href: "https://twitter.com/keell0renz",
-    label: "X",
+    label: "Twitter / X",
     icon: IconBrandX,
   },
   {
-    href: "mailto:bohdan.agarkov@gmail.com",
-    label: "Email",
-    icon: IconMail,
+    href: "https://t.me/keellorenz",
+    label: "Telegram",
+    icon: IconBrandTelegram,
   },
   {
     href: "https://www.linkedin.com/in/bohdan-agarkov-87937a276/",
@@ -28,8 +28,8 @@ export const socials = [
     icon: IconBrandGithub,
   },
   {
-    href: "https://t.me/keellorenz",
-    label: "Telegram",
-    icon: IconBrandTelegram,
+    href: "mailto:bohdan.agarkov@gmail.com",
+    label: "Email",
+    icon: IconMail,
   },
 ];
