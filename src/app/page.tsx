@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Container>
       <Heading className="font-black">Hi! I&apos;m Bohdan</Heading>
-      <Paragraph className="max-w-2xl mt-4">
+      <Paragraph className="max-w-2xl mt-4 text-justify">
         I&apos;m a Generative AI and full-stack web developer, currently
         pursuing business studies at the{" "}
         <a
@@ -22,7 +22,7 @@ export default function Home() {
         </a>
         .
       </Paragraph>
-      <Paragraph className="max-w-2xl mt-4">
+      <Paragraph className="max-w-2xl mt-4 text-justify">
         In summer 2024 I have went through an internship at{" "}
         <a
           href="https://agentql.com"
@@ -35,7 +35,7 @@ export default function Home() {
         , a Silicon Valley startup led by ex-Meta employees, developing advanced
         AI-based web scraping and automation software.
       </Paragraph>
-      <Paragraph className="max-w-2xl mt-4">
+      <Paragraph className="max-w-2xl mt-4 text-justify">
         Then, I have worked for{" "}
         <a
           href="https://multion.ai"
