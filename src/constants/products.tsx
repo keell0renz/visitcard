@@ -12,6 +12,7 @@ export const products = [
     images: [llmos],
     stack: ["LangGraph", "LangCode", "Chainlit", "Claude"],
     slug: "llm-os",
+    pinned: true,
     content: (
       <div>
         <p>
@@ -32,6 +33,7 @@ export const products = [
     images: [langcode],
     stack: ["Python", "IPykernel", "Jupyter Client"],
     slug: "langcode",
+    pinned: true,
     content: (
       <div>
         <p>
@@ -54,6 +56,7 @@ export const products = [
     images: [multionpydantic],
     stack: ["Python", "Pydantic", "MultiOn"],
     slug: "multion-pydantic",
+    pinned: true,
     content: (
       <div>
         <p>
