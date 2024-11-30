@@ -13,16 +13,6 @@ export const products = [
     stack: ["LangGraph", "LangCode", "Chainlit", "Claude"],
     slug: "llm-os",
     pinned: true,
-    content: (
-      <div>
-        <p>
-          This agent, built with LangCode and LangGraph, can execute Python code
-          in a stateful Jupyter Notebook with full access to your system, The
-          Internet, and output images generated inside Jupyter environment (ex.
-          Matplotlib plot image).
-        </p>
-      </div>
-    ),
   },
   {
     href: "https://github.com/keell0renz/langcode",
@@ -34,18 +24,6 @@ export const products = [
     stack: ["Python", "IPykernel", "Jupyter Client"],
     slug: "langcode",
     pinned: true,
-    content: (
-      <div>
-        <p>
-          LangCode is a library which provides easy-to-use and reliable
-          interface to a Python code-execution environment, such as Jupyter.
-          LangCode can be used to build autonomous code-executing agents.
-          LangCode supports text, image and code output of Jupyter. Also remote
-          connection feature and jupyter server launcher is planned for the
-          future versions.
-        </p>
-      </div>
-    ),
   },
   {
     href: "https://github.com/keell0renz/multion-pydantic",
@@ -57,24 +35,5 @@ export const products = [
     stack: ["Python", "Pydantic", "MultiOn"],
     slug: "multion-pydantic",
     pinned: true,
-    content: (
-      <div>
-        <p>
-          In this project, I created a proof-of-concept for using Pydantic
-          models to structure and validate web data extraction through the
-          MultiOn API. The library adds a new retrieve_with_model method that
-          accepts Pydantic models as queries, enabling more robust and type-safe
-          data extraction from websites.
-        </p>
-        <p>
-          This approach allows developers to define structured data schemas
-          using Pydantic and receive properly validated data objects, similar to
-          how Instructor works with OpenAI. The library handles the
-          communication with MultiOn&apos;s API while providing a cleaner, more
-          maintainable interface for extracting specific data fields from web
-          pages.
-        </p>
-      </div>
-    ),
   },
 ];
