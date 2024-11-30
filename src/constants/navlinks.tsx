@@ -15,13 +15,13 @@ export const navlinks = [
   {
     href: "/resume",
     label: "Experience",
+    icon: IconBriefcase2,
+  },
+  {
+    href: "/projects",
+    label: "Projects",
     icon: IconRocket,
   },
-  // {
-  //   href: "/projects",
-  //   label: "Projects",
-  //   icon: IconBriefcase2,
-  // },
   // {
   //   href: "/blog",
   //   label: "Articles",
