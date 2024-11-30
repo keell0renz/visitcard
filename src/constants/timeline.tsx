@@ -1,6 +1,7 @@
 export const timeline = [
   {
     company: "MultiOn",
+    website: "https://multion.ai",
     title: "Software Engineer",
     date: "Aug 2024 - Oct 2024",
     description:
@@ -14,13 +15,14 @@ export const timeline = [
   },
   {
     company: "Tiny Fish",
+    website: "https://agentql.com",
     title: "Software Engineering Intern",
     date: "May 2024 - Aug 2024",
     description:
       "Tiny Fish is a startup developing AI solutions for web extraction and automation.",
     responsibilities: [
       "Developed Python SDKs and full-stack web applications",
-      "Built autonomous AI agents for web browser automation",
+      "Introduced modern web development standards",
       "Worked remotely with the Silicon Valley based team",
       "Received 2 letters of recommendation from ex-Meta people",
     ],

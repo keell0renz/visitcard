@@ -15,12 +15,14 @@ export const WorkHistory = () => {
         >
           <Paragraph className="w-50">{item.date}</Paragraph>
           <div>
-            <Heading
-              as="h5"
-              className="text-lg md:text-lg lg:text-lg font-black"
-            >
-              {item.company}
-            </Heading>
+            <a href={item.website} target="_blank">
+              <Heading
+                as="h5"
+                className="text-lg md:text-lg lg:text-lg font-normal hover:underline hover:text-blue-500"
+              >
+                {item.company}
+              </Heading>
+            </a>
             <Paragraph className="text-base md:text-base lg:text-base font-semibold">
               {item.title}
             </Paragraph>
