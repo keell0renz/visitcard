@@ -71,7 +71,7 @@ export default function Page() {
                 Aug 2024 — Sep 2024
               </p>
               <p className="text-neutral-100 tracking-tight hover:text-neutral-300">
-                Software Engineer @ MultiOn
+                Software Engineer (contract) @ MultiOn
               </p>
             </div>
           </a>
