@@ -1,21 +1,42 @@
-# Bohdan Agarkov
+# Portfolio Blog Starter
 
-Welcome to my GitHub! I'm Bohdan Agarkov, a Generative AI and full-stack web developer, currently interning in software development at Tiny Fish, and a business student at Universiteit van Amsterdam. I'm an AI enthusiast deeply invested in learning deep learning and a proud owner of a sweet black cat named Felix.
+This is a porfolio site template complete with a blog. Includes:
 
-## What I Do
+- MDX and Markdown support
+- Optimized for SEO (sitemap, robots, JSON-LD schema)
+- RSS Feed
+- Dynamic OG images
+- Syntax highlighting
+- Tailwind v4
+- Vercel Speed Insights / Web Analytics
+- Geist font
 
-I love building crazy stuff! From innovative web applications to exploring the realms of AI and machine learning, my passion lies in creating things that haven't been done before. My journey in tech is fueled by curiosity and the desire to solve complex problems.
+## Demo
 
-## Let's Connect
+https://portfolio-blog-starter.vercel.app
 
-I'm always on the lookout for like-minded individuals to collaborate with on projects or just exchange ideas. If you're interested in building some crazy stuff together or want to chat about AI, web development, or anything tech, feel free to reach out!
+## How to Use
 
-- 📧 Email: [bogdan122305@gmail.com](mailto:bogdan122305@gmail.com)
-- 🏫 University: [Universiteit van Amsterdam](https://www.uva.nl/)
-- 🏢 Work: [Tiny Fish Inc.](https://docs.agentql.com/)
-- 🐦 Twitter: [@keell0renz](https://twitter.com/keell0renz)
-- 💼 GitHub: [keell0renz](https://github.com/keell0renz/)
-- 📱 Telegram: [keellorenz](https://t.me/keellorenz)
-- 📈 LinkedIn: [Bohdan Agarkov](https://www.linkedin.com/in/bohdan-agarkov-87937a276/)
+You can choose from one of the following two methods to use this repository:
 
-Let's make something amazing together!
+### One-Click Deploy
+
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+
+### Clone and Deploy
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+
+```bash
+pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+```
+
+Then, run Next.js in development mode:
+
+```bash
+pnpm dev
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).

@@ -1,66 +1,65 @@
+import "./global.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { SpeedInsights } from "@vercel/speed-insights/next";
+// import Footer from "./components/footer";
+import { baseUrl } from "./sitemap";
 
 export const metadata: Metadata = {
-  title: "Bohdan Agarkov",
-  description: "My personal space, lol",
-
-  metadataBase: new URL("https://keellorenz.com"),
-
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Bohdan Agarkov",
+    template: "%s | Bohdan Agarkov",
   },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Bohdan Agarkov - @keell0renz",
-    description: "Generative AI and full-stack web developer.",
-    siteId: "1723373966490849281",
-    creator: "@keell0renz",
-    creatorId: "1723373966490849281",
-    images: ["https://keellorenz.com/lorenz.png"], // Must be an absolute URL
-  },
-
+  description: "This is my portfolio.",
   openGraph: {
-    title: "Bohdan Agarkov - @keell0renz",
-    description: "Generative AI and full-stack web developer.",
-    url: "https://keellorenz.com",
+    title: "Bohdan Agarkov",
+    description: "This is my portfolio.",
+    url: baseUrl,
+    siteName: "Bohdan Agarkov",
+    locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "https://keellorenz.com/lorenz.png",
-        width: 700,
-        height: 520,
-        alt: "Bohdan Agarkov - @keell0renz",
-      },
-    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
+const cx = (...classes) => classes.filter(Boolean).join(" ");
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+    <html
+      lang="en"
+      className={cx(
+        "text-black bg-white dark:text-white dark:bg-black",
+        GeistSans.variable,
+        GeistMono.variable
+      )}
+    >
+      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          <Navbar />
           {children}
+          {/* <Footer /> */}
           <Analytics />
-        </ThemeProvider>
+          <SpeedInsights />
+        </main>
       </body>
     </html>
   );

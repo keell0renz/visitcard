@@ -1,75 +1,96 @@
-import Share from "@/components/share";
-import SocialLink from "@/components/ui/social-link";
+import { BlogPosts } from "app/components/posts";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="p-4 max-w-7xl mx-auto relative w-full pt-10 lg:pt-24 flex flex-col justify-center items-center">
-      <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50 min-h-24">
-        I love building crazy{" "}
-        <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500">
-          shit
+    <section>
+      <h1 className="mb-2 text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
+        Bohdan Agarkov{" "}
+        <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 font-normal">
+          @keell0renz
         </span>
-        .
       </h1>
-      <div className="bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[5px] w-2/4 blur-sm" />
-      <div className="bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-2/4" />
-      <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[1px] w-1/4 blur-sm" />
-      <div className="bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-      <p className="text-lg text-foreground/60 font-normal text-justify mt-4">
-        So maybe we can build something{" "}
-        <span className="bg-clip-text bg-gradient-to-r from-red-800 via-pink-600 to-blue-800">
-          together
-        </span>
-        ?
+      <div className="flex flex-row gap-4 mb-2 text-sm">
+        <a
+          href="mailto:bogdan122305@gmail.com"
+          className="text-neutral-400 hover:text-neutral-300"
+          target="_blank"
+        >
+          email
+        </a>
+        <a
+          href="https://twitter.com/keell0renz"
+          className="text-neutral-400 hover:text-neutral-300"
+          target="_blank"
+        >
+          twitter/x
+        </a>
+        <a
+          href="https://github.com/keell0renz/"
+          className="text-neutral-400 hover:text-neutral-300"
+          target="_blank"
+        >
+          github
+        </a>
+        <a
+          href="https://t.me/keellorenz"
+          className="text-neutral-400 hover:text-neutral-300"
+          target="_blank"
+        >
+          telegram
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
+          className="text-neutral-400 hover:text-neutral-300"
+          target="_blank"
+        >
+          linkedin
+        </a>
+      </div>
+      <div className="flex flex-row gap-2 mb-4">
+        <a
+          href="https://www.uva.nl/"
+          className="text-neutral-400 text-sm text-justify hover:text-blue-500 hover:underline"
+          target="_blank"
+        >
+          @ UvA
+        </a>
+      </div>
+      <p className="mb-4 text-justify">
+        {`Software engineer focused on AI/ML and full-stack development. 
+          I am interested in SWE, AI, economics, social technology and sentience.`}
       </p>
-      <article className="w-8/12 pt-6 md:pt-16 mx-auto flex flex-col">
-        <div className="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0">
-          <div className="flex flex-col md:flex-row justify-start items-center space-x-2 space-y-2 md:space-y-0">
-            <h1 className="text-xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
-              Bohdan Agarkov
-            </h1>
-            <p className="text-sm text-muted-foreground font-light">
-              [ˈboɦdan ˈaɡarkov]
-            </p>
-            <a
-              className="text-sm text-muted-foreground font-light hover:text-blue-500"
-              href="https://www.uva.nl/"
-              target="_blank"
-            >
-              @ UvA
-            </a>
-            {/* <a
-              className="text-sm text-muted-foreground font-light hover:text-blue-500"
-              href="https://multion.ai/"
-              target="_blank"
-            >
-              @ MultiOn
-            </a> */}
-          </div>
-          <div className="flex flex-row space-x-1">
-            <SocialLink platform="email" href="mailto:bogdan122305@gmail.com" />
-            <SocialLink
-              platform="twitter"
-              href="https://twitter.com/keell0renz"
-            />
-            <SocialLink
-              platform="github"
-              href="https://github.com/keell0renz/"
-            />
-            <SocialLink platform="telegram" href="https://t.me/keellorenz" />
-            <SocialLink
-              platform="linkedin"
-              href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
-            />
-          </div>
-          <Share />
+      <div className="mb-4 text-justify">
+        <div>
+          <a
+            className="flex flex-col space-y-1 mb-4"
+            href="https://multion.ai"
+            target="_blank"
+          >
+            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
+              <p className="text-neutral-400 w-[170px] whitespace-nowrap tabular-nums">
+                Aug 2024 — Sep 2024
+              </p>
+              <p className="text-neutral-100 tracking-tight hover:text-neutral-300">
+                Software Engineering Contractor @ MultiOn
+              </p>
+            </div>
+          </a>
+          <a
+            className="flex flex-col space-y-1 mb-4"
+            href="https://agentql.com"
+            target="_blank"
+          >
+            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
+              <p className="text-neutral-400 w-[170px] whitespace-nowrap tabular-nums">
+                May 2024 — Aug 2024
+              </p>
+              <p className="text-neutral-100 hover:text-neutral-300">
+                Software Engineering Intern @ Tiny Fish
+              </p>
+            </div>
+          </a>
         </div>
-        <div className="text-md text-neutral-300 pt-4 text-justify">
-          Generative AI and full-stack web developer, business student at
-          Universiteit van Amsterdam. A happy owner of a sweet black cat Felix.
-          Curious about autonomous AI and AGI.
-        </div>
-      </article>
-    </main>
+      </div>
+    </section>
   );
 }
