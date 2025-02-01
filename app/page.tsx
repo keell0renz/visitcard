@@ -59,7 +59,7 @@ export default function Page() {
         {`Software engineer focused on AI/ML and full-stack development. 
           I am interested in SWE, AI, economics, social technology and sentience.`}
       </p>
-      <div className="mb-4 text-justify">
+      {/* <div className="mb-4 text-justify">
         <div>
           <a
             className="flex flex-col space-y-1 mb-4"
@@ -90,7 +90,7 @@ export default function Page() {
             </div>
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
