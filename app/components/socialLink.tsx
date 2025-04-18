@@ -1,17 +1,16 @@
-
 interface SocialLinkProps {
-    href: string
-    title: string
+  href: string;
+  title: string;
 }
 
 export default function SocialLink(props: SocialLinkProps) {
-    return (
-        <a
-        href="mailto:bogdan122305@gmail.com"
-        className="text-neutral-400 hover:text-neutral-300"
-        target="_blank"
-      >
-        email
-      </a>
-    )
+  return (
+    <a
+      href={props.href}
+      className="text-neutral-400 hover:text-neutral-300"
+      target="_blank"
+    >
+      {props.title}
+    </a>
+  );
 }
