@@ -1,4 +1,3 @@
-import { BlogPosts } from "app/components/posts";
 
 export default function Page() {
   return (
@@ -59,38 +58,6 @@ export default function Page() {
         {`Software engineer focused on AI/ML and full-stack development. 
           I am interested in SWE, AI, economics, social technology and sentience.`}
       </p>
-      {/* <div className="mb-4 text-justify">
-        <div>
-          <a
-            className="flex flex-col space-y-1 mb-4"
-            href="https://multion.ai"
-            target="_blank"
-          >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-400 w-[170px] whitespace-nowrap tabular-nums">
-                Aug 2024 — Sep 2024
-              </p>
-              <p className="text-neutral-100 tracking-tight hover:text-neutral-300">
-                Software Engineer (contract) @ MultiOn
-              </p>
-            </div>
-          </a>
-          <a
-            className="flex flex-col space-y-1 mb-4"
-            href="https://agentql.com"
-            target="_blank"
-          >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-400 w-[170px] whitespace-nowrap tabular-nums">
-                May 2024 — Aug 2024
-              </p>
-              <p className="text-neutral-100 hover:text-neutral-300">
-                Software Engineering Intern @ Tiny Fish
-              </p>
-            </div>
-          </a>
-        </div>
-      </div> */}
     </section>
   );
 }
