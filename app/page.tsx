@@ -5,38 +5,34 @@ import { SiX } from 'react-icons/si';
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-2 text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
-        Bohdan Agarkov{' '}
-        <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 font-normal">
-          @keell0renz
-        </span>
-      </h1>
-      <div className="flex flex-row gap-4 mb-2 text-sm">
-        <SocialLink href="mailto:bogdan122305@gmail.com" icon={FaEnvelope} size={16} />
-        <SocialLink href="https://twitter.com/keell0renz" icon={SiX} size={16} />
-        <SocialLink href="https://github.com/keell0renz/" icon={FaGithub} size={16} />
-        <SocialLink href="https://t.me/keellorenz" icon={FaTelegram} size={16} />
-        <SocialLink href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/" icon={FaLinkedin} size={16} />
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
+          Bohdan Agarkov{' '}
+          <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 font-normal">
+            @keell0renz
+          </span>
+        </h1>
+        <div className="flex flex-row gap-4 text-sm">
+          <SocialLink href="mailto:bogdan122305@gmail.com" icon={FaEnvelope} size={18} />
+          <SocialLink href="https://twitter.com/keell0renz" icon={SiX} size={18} />
+          <SocialLink href="https://github.com/keell0renz/" icon={FaGithub} size={18} />
+          <SocialLink href="https://t.me/keellorenz" icon={FaTelegram} size={18} />
+          <SocialLink href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/" icon={FaLinkedin} size={18} />
+        </div>
       </div>
-      <div className="flex flex-row gap-2 mb-4">
-      <a
-          href="https://mrge.io"
-          className="text-neutral-400 text-sm text-justify hover:text-blue-500 hover:underline"
-          target="_blank"
-        >
-          @ mrge (YC X25)
-        </a>
-        <a
-          href="https://www.uva.nl/"
-          className="text-neutral-400 text-sm text-justify hover:text-blue-500 hover:underline"
-          target="_blank"
-        >
-          @ UvA
-        </a>
-      </div>
+
       <p className="mb-4 text-justify">
-        {`Software engineer, focused on AI/ML and full-stack development. 
-          I am interested in SWE, AI, economics, social technology and sentience.`}
+        {`Software engineer at `}
+        <a 
+          href="https://mrge.io" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 hover:opacity-80 transition-opacity"
+        >
+          mrge (YC X25)
+        </a>
+        {`, focused on AI/ML and full-stack development. 
+        I am interested in SWE, AI, economics, social technology and sentience.`}
       </p>
     </section>
   );
