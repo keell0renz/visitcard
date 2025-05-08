@@ -31,8 +31,8 @@ export default function Page() {
         >
           mrge (YC X25)
         </a>
-        {`, focused on AI/ML and full-stack development. 
-        I am interested in SWE, AI, economics, social technology and sentience.`}
+        {`, focused on generative AI and full-stack development. 
+        I am interested in SWE, AI, economics and sentience.`}
       </p>
     </section>
   );
