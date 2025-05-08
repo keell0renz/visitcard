@@ -17,6 +17,13 @@ export default function Page() {
         <SocialLink href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/" title="linkedin" />
       </div>
       <div className="flex flex-row gap-2 mb-4">
+      <a
+          href="https://mrge.io"
+          className="text-neutral-400 text-sm text-justify hover:text-blue-500 hover:underline"
+          target="_blank"
+        >
+          @ mrge (YC X25)
+        </a>
         <a
           href="https://www.uva.nl/"
           className="text-neutral-400 text-sm text-justify hover:text-blue-500 hover:underline"
@@ -26,7 +33,7 @@ export default function Page() {
         </a>
       </div>
       <p className="mb-4 text-justify">
-        {`Software engineer focused on AI/ML and full-stack development. 
+        {`Software engineer, focused on AI/ML and full-stack development. 
           I am interested in SWE, AI, economics, social technology and sentience.`}
       </p>
     </section>
