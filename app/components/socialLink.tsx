@@ -1,16 +1,20 @@
+import { IconType } from 'react-icons';
+
 interface SocialLinkProps {
   href: string;
-  title: string;
+  icon: IconType;
+  size?: number;
 }
 
-export default function SocialLink(props: SocialLinkProps) {
+export default function SocialLink({ href, icon: Icon, size = 16 }: SocialLinkProps) {
   return (
     <a
-      href={props.href}
-      className="text-neutral-400 hover:text-neutral-300"
+      href={href}
+      className="text-neutral-400 hover:text-neutral-300 transition-colors"
       target="_blank"
+      rel="noopener noreferrer"
     >
-      {props.title}
+      <Icon size={size} />
     </a>
   );
 }

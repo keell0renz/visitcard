@@ -1,4 +1,6 @@
 import SocialLink from "./components/socialLink";
+import { FaEnvelope, FaGithub, FaTelegram, FaLinkedin } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 
 export default function Page() {
   return (
@@ -10,11 +12,11 @@ export default function Page() {
         </span>
       </h1>
       <div className="flex flex-row gap-4 mb-2 text-sm">
-        <SocialLink href="mailto:bogdan122305@gmail.com" title="email" />
-        <SocialLink href="https://twitter.com/keell0renz" title="twitter/x" />
-        <SocialLink href="https://github.com/keell0renz/" title="github" />
-        <SocialLink href="https://t.me/keellorenz" title="telegram" />
-        <SocialLink href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/" title="linkedin" />
+        <SocialLink href="mailto:bogdan122305@gmail.com" icon={FaEnvelope} size={16} />
+        <SocialLink href="https://twitter.com/keell0renz" icon={SiX} size={16} />
+        <SocialLink href="https://github.com/keell0renz/" icon={FaGithub} size={16} />
+        <SocialLink href="https://t.me/keellorenz" icon={FaTelegram} size={16} />
+        <SocialLink href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/" icon={FaLinkedin} size={16} />
       </div>
       <div className="flex flex-row gap-2 mb-4">
       <a
