@@ -8,7 +8,7 @@ export default function Page() {
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
           Bohdan Agarkov{' '}
-          <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 font-normal">
+          <span className="bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-red-600 font-normal">
             @keell0renz
           </span>
         </h1>
@@ -27,7 +27,7 @@ export default function Page() {
           href="https://mrge.io" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-pink-400 to-red-500 hover:opacity-80 transition-opacity"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pink-500 to-red-600 hover:opacity-80 transition-opacity"
         >
           mrge (YC X25)
         </a>
