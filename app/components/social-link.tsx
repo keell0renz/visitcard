@@ -6,7 +6,11 @@ interface SocialLinkProps {
   size?: number;
 }
 
-export default function SocialLink({ href, icon: Icon, size = 16 }: SocialLinkProps) {
+export default function SocialLink({
+  href,
+  icon: Icon,
+  size = 16,
+}: SocialLinkProps) {
   return (
     <a
       href={href}

@@ -4,8 +4,9 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import 'katex/dist/katex.min.css';
 
-const baseUrl = "https://keellorenz.com"
+const baseUrl = 'https://keellorenz.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
