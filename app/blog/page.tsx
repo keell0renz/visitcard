@@ -44,7 +44,7 @@ export default async function BlogPage() {
     <section>
       <BackLink href="/" text="Back to main" />
 
-      <h1 className="text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 mb-4">
+      <h1 className="text-2xl fading-text mb-4">
         Blog
       </h1>
       <div className="space-y-3">

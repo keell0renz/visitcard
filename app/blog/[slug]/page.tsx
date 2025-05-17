@@ -52,7 +52,7 @@ export default async function BlogPost({
     <section>
       <BackLink href="/blog" text="Back to blog" />
 
-      <h1 className="text-2xl font-semibold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 mb-2">
+      <h1 className="text-2xl fading-text mb-2">
         {post.title}
       </h1>
 
