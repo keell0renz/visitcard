@@ -54,12 +54,12 @@ export default function Page() {
       <p className="mb-4 text-justify">
         {`Software engineer at `}
         <a
-          href="https://mrge.io"
+          href="https://cubic.dev"
           target="_blank"
           rel="noopener noreferrer"
           className="text-transparent thermal-highlight hover:opacity-80 transition-opacity"
         >
-          mrge (YC X25)
+          cubic (YC X25)
         </a>
         {`, focused on generative AI and full-stack development. 
         I am interested in SWE, AI, economics and sentience.`}
