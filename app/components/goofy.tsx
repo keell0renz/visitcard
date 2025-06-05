@@ -25,6 +25,11 @@ const Component = () => {
     setItems(items)
   }
 
+  const deleteItem = (index: number) => {
+    items.splice(index, 1)
+    setItems(items)
+  }
+
   const filteredItems = items.filter(item => 
     item.toLowerCase().includes(searchTerm.toLowerCase())
   )
