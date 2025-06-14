@@ -9,7 +9,7 @@ import 'katex/dist/katex.min.css';
 const baseUrl = 'https://keellorenz.com';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(baseUrl), // Added some bullshit just for test
   title: {
     default: 'Bohdan Agarkov',
     template: '%s | Bohdan Agarkov',
