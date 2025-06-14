@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Bohdan Agarkov',
     description: 'This is my portfolio.',
     url: baseUrl,
-    siteName: 'Bohdan Agarkov',
+    siteName: 'Bohdan Agarkov', // BOBO
     locale: 'en_US',
     type: 'website',
   },
