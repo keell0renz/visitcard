@@ -52,14 +52,14 @@ export default function Page() {
       </div>
 
       <p className="mb-4 text-justify">
-        {`Software engineer at `}
+        {`Founding Engineer at `}
         <a
-          href="https://cubic.dev"
+          href="https://stormy.ai"
           target="_blank"
           rel="noopener noreferrer"
           className="text-transparent thermal-highlight hover:opacity-80 transition-opacity"
         >
-          cubic (YC X25)
+          Stormy (YC S24)
         </a>
         {`, focused on generative AI and full-stack development. 
         I am interested in SWE, AI, economics and sentience.`}
