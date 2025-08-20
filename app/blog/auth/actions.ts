@@ -2,9 +2,7 @@
 
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-
-const BLOG_PASSWORD = 'Catcatcat10&';
-const COOKIE_NAME = 'blog-auth';
+import { BLOG_CONFIG } from 'app/config/blog';
 
 // Create a hash of the password for cookie verification using Web Crypto API
 async function createPasswordHash(password: string): Promise<string> {
@@ -23,15 +21,15 @@ export async function authenticateBlog(formData: FormData) {
     return { error: 'Password is required' };
   }
   
-  if (password !== BLOG_PASSWORD) {
+  if (password !== BLOG_CONFIG.password) {
     return { error: 'Incorrect password' };
   }
   
   // Password is correct, set the auth cookie
-  const passwordHash = await createPasswordHash(BLOG_PASSWORD);
+  const passwordHash = await createPasswordHash(BLOG_CONFIG.password);
   const cookieStore = cookies();
   
-  cookieStore.set(COOKIE_NAME, passwordHash, {
+  cookieStore.set(BLOG_CONFIG.sessionKey, passwordHash, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',

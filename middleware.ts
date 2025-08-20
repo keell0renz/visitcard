@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-const BLOG_PASSWORD = 'keellorenz2024';
-const COOKIE_NAME = 'blog-auth';
+import { BLOG_CONFIG } from './app/config/blog';    
 
 // Create a hash of the password for cookie verification using Web Crypto API
 async function createPasswordHash(password: string): Promise<string> {
@@ -21,8 +19,8 @@ export async function middleware(request: NextRequest) {
   }
   
   // Check if user has valid auth cookie
-  const authCookie = request.cookies.get(COOKIE_NAME);
-  const validHash = await createPasswordHash(BLOG_PASSWORD);
+  const authCookie = request.cookies.get(BLOG_CONFIG.sessionKey);
+  const validHash = await createPasswordHash(BLOG_CONFIG.password);
   
   if (authCookie?.value === validHash) {
     return NextResponse.next();
