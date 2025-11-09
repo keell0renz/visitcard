@@ -27,7 +27,7 @@ export async function authenticateBlog(formData: FormData) {
 
   // Password is correct, set the auth cookie
   const passwordHash = await createPasswordHash(BLOG_CONFIG.password);
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
 
   cookieStore.set(BLOG_CONFIG.sessionKey, passwordHash, {
     httpOnly: true,
