@@ -29,7 +29,7 @@ const resume = {
       "start_date": "Aug 2025",
       "end_date": "Sep 2025",
       "location": "San Francisco, United States · Remote",
-      "description": "Decided to do some contract work before college started again. Maintained a very messy codebase serving around 120 enterprise customers, increased reliability and efficiency of influencer search AI agent algorithm, saved Stormy around 1300 USD in API fees because of my work. Did plenty of refactoring and stabilization, was available 24/7 for any technical failures."
+      "description": "Maintained a complex vertical SaaS AI agent at scale, just some work before college started"
     },
     {
       "company": "Cubic",
@@ -43,7 +43,7 @@ const resume = {
       "start_date": "May 2025",
       "end_date": "Aug 2025",
       "location": "London, United Kingdom · Remote",
-      "description": "Introduced integrations with task trackers, enhanced accuracy and context understanding of the agent which has landed us a few of new enterprise users. Improved developer experience for observability, saving the team time on log filtering and removing slop from the output. Also got mentioned in a tech newspaper!"
+      "description": "Introduced integrations with task trackers, enhanced accuracy and context understanding of the agent, improved developer experience for observability, got mentioned in a tech newspaper"
     },
     {
       "company": "Tiny Fish",
@@ -53,7 +53,7 @@ const resume = {
       "start_date": "May 2024",
       "end_date": "Aug 2024",
       "location": "Palo Alto, United States · Remote",
-      "description": "Influenced overall product direction, specifically SDK interface, making it more intuitive, introduced modern web development standards, contributed to better integration."
+      "description": "Influenced overall product direction, specifically SDK interface, making it more intuitive, introduced modern web development standards, contributed to web interface"
     }
   ]
 }

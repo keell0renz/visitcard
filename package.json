@@ -6,7 +6,7 @@
     "start": "next start",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "generate-resume": "tsx app/scripts/generate-resume.ts"
+    "generate-resume": "tsx src/scripts/generate-resume.ts"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.1",
