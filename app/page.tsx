@@ -55,7 +55,8 @@ export default function Page() {
         {`Software Engineer, focused on generative AI and full-stack development. 
         I am interested in SWE, AI, economics and sentience.`}
       </p>
-      <p className="mb-4 text-justify">
+
+      {/* <p className="mb-4 text-justify"> // Temporarily hid blog
         I also have a{' '}
         <a
           href="/blog"
@@ -64,7 +65,7 @@ export default function Page() {
           blog
         </a>
         .
-      </p>
+      </p> */}
     </section>
   );
 }

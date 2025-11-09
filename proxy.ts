@@ -10,7 +10,7 @@ async function createPasswordHash(password: string): Promise<string> {
   return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   // Only protect blog routes
@@ -40,3 +40,4 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: '/blog/:path*'
 };
+
