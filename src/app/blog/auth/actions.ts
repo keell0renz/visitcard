@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { BLOG_CONFIG } from 'app/config/blog';
+import { BLOG_CONFIG } from 'src/config/blog';
 
 // Create a hash of the password for cookie verification using Web Crypto API
 async function createPasswordHash(password: string): Promise<string> {
