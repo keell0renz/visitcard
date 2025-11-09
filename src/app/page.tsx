@@ -3,7 +3,7 @@ import Experience from '../components/experience';
 import { FaEnvelope, FaGithub, FaTelegram, FaLinkedin } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import Image from 'next/image';
-import resume from '../config/resume';
+import { experience } from 'src/config/experience';
 
 export default function Page() {
   return (
@@ -67,7 +67,7 @@ export default function Page() {
         .
       </p> */}
 
-      <Experience experiences={resume.experience} />
+      <Experience experiences={experience} />
     </section>
   );
 }

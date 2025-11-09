@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import { FaFileAlt, FaArrowLeft } from 'react-icons/fa';
-import BackLink from 'app/components/back-link';
+import BackLink from 'src/components/back-link';
 
 // Define the type for our blog post metadata
 type BlogPost = {
