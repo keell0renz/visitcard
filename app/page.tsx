@@ -1,7 +1,9 @@
 import SocialLink from './components/social-link';
+import Experience from './components/experience';
 import { FaEnvelope, FaGithub, FaTelegram, FaLinkedin } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import Image from 'next/image';
+import resume from './config/resume';
 
 export default function Page() {
   return (
@@ -64,6 +66,8 @@ export default function Page() {
         </a>
         .
       </p> */}
+
+      <Experience experiences={resume.experience} />
     </section>
   );
 }
