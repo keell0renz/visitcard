@@ -7,7 +7,7 @@ import { useFormStatus } from 'react-dom';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
-  
+
   return (
     <button
       type="submit"
@@ -50,7 +50,7 @@ export default function BlogAuthForm({ action }: BlogAuthFormProps) {
   return (
     <form action={handleAction} className="space-y-4">
       <input type="hidden" name="redirect" value={redirectTo} />
-      
+
       <div className="relative">
         <input
           type={showPassword ? 'text' : 'password'}
@@ -68,15 +68,15 @@ export default function BlogAuthForm({ action }: BlogAuthFormProps) {
           className="absolute right-3 top-1/2 transform -translate-y-1/2
             text-neutral-400 hover:text-neutral-200 transition-colors"
         >
-          {showPassword ? <FaEyeSlash className="w-4 h-4" /> : <FaEye className="w-4 h-4" />}
+          {showPassword ? (
+            <FaEyeSlash className="w-4 h-4" />
+          ) : (
+            <FaEye className="w-4 h-4" />
+          )}
         </button>
       </div>
 
-      {error && (
-        <div className="text-red-400 text-sm text-center">
-          {error}
-        </div>
-      )}
+      {error && <div className="text-red-400 text-sm text-center">{error}</div>}
 
       <SubmitButton />
     </form>

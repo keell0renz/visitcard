@@ -52,9 +52,7 @@ export default async function BlogPost({
     <section>
       <BackLink href="/blog" text="Back to blog" />
 
-      <h1 className="text-2xl fading-text mb-2">
-        {post.title}
-      </h1>
+      <h1 className="text-2xl fading-text mb-2">{post.title}</h1>
 
       <div className="text-neutral-400 mb-4">
         {new Date(post.date).toLocaleDateString('en-US', {

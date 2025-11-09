@@ -13,7 +13,8 @@ export default function BlogAuthPage() {
           </div>
           <h1 className="text-2xl fading-text mb-2">Protected Content</h1>
           <p className="text-neutral-400">
-            This blog is password protected. Please enter the password to continue.
+            This blog is password protected. Please enter the password to
+            continue.
           </p>
         </div>
 

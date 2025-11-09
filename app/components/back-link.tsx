@@ -15,7 +15,7 @@ export default function BackLink({ href, text }: BackLinkProps) {
       <FaArrowLeft className="w-4 h-4" />
       <span className="relative">
         {text}
-        <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all group-hover:w-full" />
+        <span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full" />
       </span>
     </Link>
   );

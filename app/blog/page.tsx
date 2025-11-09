@@ -44,9 +44,7 @@ export default async function BlogPage() {
     <section>
       <BackLink href="/" text="Back to main" />
 
-      <h1 className="text-2xl fading-text mb-4">
-        Blog
-      </h1>
+      <h1 className="text-2xl fading-text mb-4">Blog</h1>
       <div className="space-y-3">
         {posts.map((post) => (
           <Link

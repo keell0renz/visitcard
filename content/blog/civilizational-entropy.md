@@ -30,4 +30,3 @@ What were Jefferson and Washington if not startup founders? They worked for Brit
 This is how the world operates. How much of what we have from bygone eras has lost its substance? How many symbols are now hollow? How much can still be broken, allowing innovators to earn their share of glory by building something new: the political and economic structures, social norms, laws, regulations, morality, the biological basis of humans, social mobility, motivations, rewards, and much more?
 
 It is encouraging that these "innovators" can be nurtured, supported, and allowed to disrupt, recognizing their importance to society and human civilization.
-

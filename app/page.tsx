@@ -17,9 +17,7 @@ export default function Page() {
           />
           <h1 className="text-2xl fading-text">
             Bohdan Agarkov{' '}
-            <span className="thermal-highlight">
-              @keell0renz
-            </span>
+            <span className="thermal-highlight">@keell0renz</span>
           </h1>
         </div>
         <div className="flex flex-row gap-4 text-sm">
@@ -28,11 +26,11 @@ export default function Page() {
             icon={FaEnvelope}
             size={18}
           />
-          <SocialLink
-            href="https://twitter.com/keell0renz"
+          {/* <SocialLink
+            href="https://x.com/vanderseele"
             icon={SiX}
             size={18}
-          />
+          /> */}
           <SocialLink
             href="https://github.com/keell0renz/"
             icon={FaGithub}
