@@ -1,19 +1,31 @@
 # Portfolio Blog Starter
 
-This is a porfolio site template complete with a blog. Includes:
-
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+This is a porfolio site template complete with a blog.
 
 ## Demo
 
 https://portfolio-blog-starter.vercel.app
+
+## Features
+
+- **MDX and Markdown Support:** Write your blog posts and pages in MDX or Markdown.
+- **SEO Optimized:** Includes a `sitemap.xml`, `robots.txt`, and JSON-LD schema to improve your site's ranking in search results.
+- **RSS Feed:** Your readers can subscribe to your blog via RSS.
+- **Dynamic OG Images:** Automatically generate Open Graph images for your blog posts.
+- **Syntax Highlighting:** Your code blocks will be beautifully highlighted.
+- **Contact Form:** A functional contact form to allow visitors to get in touch.
+- **Tailwind v4:** A utility-first CSS framework for rapid UI development.
+- **Vercel Speed Insights / Web Analytics:** Monitor your site's performance and traffic.
+- **Geist Font:** A modern, open-source font family.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MDX](https://mdxjs.com/)
+- [Vercel](https://vercel.com/)
 
 ## How to Use
 
@@ -40,3 +52,13 @@ pnpm dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+
+## How to Customize
+
+To customize this template, you'll need to modify the following files:
+
+- **`src/app/page.tsx`:** This is the main page of the portfolio. You can change the text, social media links, and experience section here.
+- **`src/config/experience.ts`:** This file contains the data for the experience section. You can add, remove, or modify the entries here.
+- **`content/blog/`:** This directory contains the blog posts. You can add new posts by creating new `.md` or `.mdx` files here.
+- **`public/`:** This directory contains the static assets, such as images and the `sitemap.xml` file. You can replace the favicon and other images here.
+- **`src/app/layout.tsx`:** This file contains the main layout of the site. You can change the title, description, and other metadata here.

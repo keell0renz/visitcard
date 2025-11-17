@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://keellorenz.com/</loc>
+    <lastmod>2023-11-17</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://keellorenz.com/blog</loc>
+    <lastmod>2023-11-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://keellorenz.com/blog/civilizational-entropy</loc>
+    <lastmod>2023-11-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://keellorenz.com/blog/the-silicon-state</loc>
+    <lastmod>2023-11-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+</urlset>
