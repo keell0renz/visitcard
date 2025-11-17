@@ -1,7 +1,7 @@
 const resume = {
   "name": "Bohdan Agarkov",
   "dob": "23 December, 2005",
-  "summary": "Young and high-agency software engineer with experience at multiple startups and environments, experienced in full-stack, back-end and AI agent engineering at scale. Previously worked for early stage YC startups where agency, speed and execution are crucial to delivering software to the customers. I am experienced at maintaining complex early-stage production systems and refactoring them for maintainability, and introducing new and complex features requiring extensive planning and trade-offs.",
+  "summary": "Young and high-agency software engineer with experience at multiple startups and environments, experienced in full-stack, back-end and AI agent engineering at scale. Previously worked for early stage YC startups where agency, speed and execution are crucial to delivering software to the customers. I am experienced at maintaining complex early-stage production systems and refactoring them for maintainability, and introducing new and complex features requiring extensive planning and trade-offs. Also, I have beginner understanding and experience in ML and AI generally, and would love to pursue more ML-related work.",
   "contacts": {
     "phone": "+380987812669",
     "email": "bogdan122305@gmail.com",
@@ -15,6 +15,13 @@ const resume = {
     "minor": "Minor in Data Science and Artificial Intelligence",
     "start": "September 2024",
     "end": "June 2027"
+  },
+  "exams": {
+    "sat": {
+      "RW": "670",
+      "M": "790",
+      "total": "1460"
+    }
   },
   "experience": [
     {

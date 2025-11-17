@@ -97,6 +97,22 @@ const styles = StyleSheet.create({
     fontSize: 9,
     color: '#333333',
   },
+  // Test Scores section
+  testScoresBlock: {
+    marginBottom: 4,
+  },
+  testScoreRow: {
+    flexDirection: 'row',
+    marginBottom: 2,
+  },
+  testName: {
+    fontSize: 10,
+    fontFamily: 'Helvetica-Bold',
+    marginRight: 8,
+  },
+  testScore: {
+    fontSize: 10,
+  },
   // Experience section
   experienceBlock: {
     marginBottom: 12,
@@ -228,6 +244,27 @@ const ResumeDocument = () =>
           ),
           React.createElement(Text, { style: styles.degree }, resume.education.major),
           React.createElement(Text, { style: styles.minor }, resume.education.minor)
+        )
+      ),
+
+      // Test Scores Section
+      React.createElement(
+        View,
+        { style: styles.section },
+        React.createElement(Text, { style: styles.sectionTitle }, 'Test Scores'),
+        React.createElement(
+          View,
+          { style: styles.testScoresBlock },
+          React.createElement(
+            View,
+            { style: styles.testScoreRow },
+            React.createElement(Text, { style: styles.testName }, 'SAT:'),
+            React.createElement(
+              Text,
+              { style: styles.testScore },
+              `Total: ${resume.exams.sat.total} (Reading & Writing: ${resume.exams.sat.RW}, Math: ${resume.exams.sat.M})`
+            )
+          )
         )
       )
     )
