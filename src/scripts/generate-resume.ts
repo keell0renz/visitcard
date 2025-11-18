@@ -148,6 +148,22 @@ const styles = StyleSheet.create({
     lineHeight: 1.5,
     marginTop: 2,
   },
+  // Skills section - tag-like display
+  skillsContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+  },
+  skillTag: {
+    fontSize: 9,
+    backgroundColor: '#f0f0f0',
+    paddingVertical: 3,
+    paddingHorizontal: 8,
+    marginRight: 6,
+    marginBottom: 6,
+    borderRadius: 3,
+    textAlign: 'center',
+  },
 });
 
 // Resume Document Component using createElement
@@ -184,6 +200,20 @@ const ResumeDocument = () =>
         { style: styles.section },
         React.createElement(Text, { style: styles.sectionTitle }, 'Professional Summary'),
         React.createElement(Text, { style: styles.summary }, resume.summary)
+      ),
+
+      // Skills Section
+      React.createElement(
+        View,
+        { style: styles.section },
+        React.createElement(Text, { style: styles.sectionTitle }, 'Skills'),
+        React.createElement(
+          View,
+          { style: styles.skillsContainer },
+          ...resume.skills.map((skill, index) =>
+            React.createElement(Text, { key: index, style: styles.skillTag }, skill)
+          )
+        )
       ),
 
       // Experience Section

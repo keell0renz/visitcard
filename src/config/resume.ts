@@ -23,6 +23,7 @@ const resume = {
       "total": "1460"
     }
   },
+  "skills": ["Software Engineering", "Full-Stack Development", "Back-End Development", "Machine Learning Engineering", "Applied AI", "TypeScript", "Python"],
   "experience": [
     {
       "company": "Stormy",
