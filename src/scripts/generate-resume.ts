@@ -1,5 +1,12 @@
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet, pdf } from '@react-pdf/renderer';
+import {
+  Document,
+  Page,
+  Text,
+  View,
+  StyleSheet,
+  pdf,
+} from '@react-pdf/renderer';
 import * as fs from 'fs';
 import * as path from 'path';
 import resume from '../config/resume';
@@ -10,14 +17,14 @@ const formatYCBatch = (batch: string): string => {
   const parts = batch.split(' ');
   const season = parts[0];
   const year = parts[1];
-  
+
   const seasonMap: { [key: string]: string } = {
-    'Summer': 'S',
-    'Spring': 'X',
-    'Fall': 'F',
-    'Winter': 'W'
+    Summer: 'S',
+    Spring: 'X',
+    Fall: 'F',
+    Winter: 'W',
   };
-  
+
   const seasonLetter = seasonMap[season] || season.charAt(0);
   return `${seasonLetter}${year.slice(-2)}`;
 };
@@ -182,15 +189,35 @@ const ResumeDocument = () =>
         React.createElement(
           View,
           { style: styles.contactRow },
-          React.createElement(Text, { style: styles.contactItem }, resume.contacts.email),
-          React.createElement(Text, { style: styles.contactItem }, resume.contacts.phone),
-          React.createElement(Text, { style: styles.contactItem }, resume.contacts.location)
+          React.createElement(
+            Text,
+            { style: styles.contactItem },
+            resume.contacts.email
+          ),
+          React.createElement(
+            Text,
+            { style: styles.contactItem },
+            resume.contacts.phone
+          ),
+          React.createElement(
+            Text,
+            { style: styles.contactItem },
+            resume.contacts.location
+          )
         ),
         React.createElement(
           View,
           { style: styles.contactRow },
-          React.createElement(Text, { style: styles.contactItem }, resume.contacts.linkedin),
-          React.createElement(Text, { style: styles.contactItem }, resume.contacts.website)
+          React.createElement(
+            Text,
+            { style: styles.contactItem },
+            resume.contacts.linkedin
+          ),
+          React.createElement(
+            Text,
+            { style: styles.contactItem },
+            resume.contacts.website
+          )
         )
       ),
 
@@ -198,7 +225,11 @@ const ResumeDocument = () =>
       React.createElement(
         View,
         { style: styles.section },
-        React.createElement(Text, { style: styles.sectionTitle }, 'Professional Summary'),
+        React.createElement(
+          Text,
+          { style: styles.sectionTitle },
+          'Professional Summary'
+        ),
         React.createElement(Text, { style: styles.summary }, resume.summary)
       ),
 
@@ -211,7 +242,11 @@ const ResumeDocument = () =>
           View,
           { style: styles.skillsContainer },
           ...resume.skills.map((skill, index) =>
-            React.createElement(Text, { key: index, style: styles.skillTag }, skill)
+            React.createElement(
+              Text,
+              { key: index, style: styles.skillTag },
+              skill
+            )
           )
         )
       ),
@@ -220,7 +255,11 @@ const ResumeDocument = () =>
       React.createElement(
         View,
         { style: styles.section },
-        React.createElement(Text, { style: styles.sectionTitle }, 'Professional Experience'),
+        React.createElement(
+          Text,
+          { style: styles.sectionTitle },
+          'Professional Experience'
+        ),
         ...resume.experience.map((exp, index) =>
           React.createElement(
             View,
@@ -231,7 +270,9 @@ const ResumeDocument = () =>
               React.createElement(
                 Text,
                 { style: styles.company },
-                exp.yc ? `${exp.company} (YC ${formatYCBatch(exp.yc.batch)})` : exp.company
+                exp.yc
+                  ? `${exp.company} (YC ${formatYCBatch(exp.yc.batch)})`
+                  : exp.company
               ),
               React.createElement(
                 Text,
@@ -249,7 +290,11 @@ const ResumeDocument = () =>
               )
             ),
             React.createElement(Text, { style: styles.location }, exp.location),
-            React.createElement(Text, { style: styles.description }, exp.description)
+            React.createElement(
+              Text,
+              { style: styles.description },
+              exp.description
+            )
           )
         )
       ),
@@ -265,15 +310,27 @@ const ResumeDocument = () =>
           React.createElement(
             View,
             { style: styles.institutionRow },
-            React.createElement(Text, { style: styles.institution }, resume.education.institution),
+            React.createElement(
+              Text,
+              { style: styles.institution },
+              resume.education.institution
+            ),
             React.createElement(
               Text,
               { style: styles.dates },
               `${resume.education.start} - ${resume.education.end}`
             )
           ),
-          React.createElement(Text, { style: styles.degree }, resume.education.major),
-          React.createElement(Text, { style: styles.minor }, resume.education.minor)
+          React.createElement(
+            Text,
+            { style: styles.degree },
+            resume.education.major
+          ),
+          React.createElement(
+            Text,
+            { style: styles.minor },
+            resume.education.minor
+          )
         )
       ),
 
@@ -281,7 +338,11 @@ const ResumeDocument = () =>
       React.createElement(
         View,
         { style: styles.section },
-        React.createElement(Text, { style: styles.sectionTitle }, 'Test Scores'),
+        React.createElement(
+          Text,
+          { style: styles.sectionTitle },
+          'Test Scores'
+        ),
         React.createElement(
           View,
           { style: styles.testScoresBlock },
@@ -320,8 +381,13 @@ async function generateResume() {
 
     // Ensure the desktop directory exists
     if (!fs.existsSync(desktopPath)) {
-      console.error('❌ Desktop directory not found. Saving to current directory instead.');
-      const fallbackPath = path.join(process.cwd(), 'Bohdan_Agarkov_Resume.pdf');
+      console.error(
+        '❌ Desktop directory not found. Saving to current directory instead.'
+      );
+      const fallbackPath = path.join(
+        process.cwd(),
+        'Bohdan_Agarkov_Resume.pdf'
+      );
       fs.writeFileSync(fallbackPath, new Uint8Array(nodeBuffer));
       console.log(`✅ Resume generated successfully at: ${fallbackPath}`);
       return;

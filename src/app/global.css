@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: #262626;
+  color: #ffffff;
 }
 
 :root {
@@ -32,8 +32,8 @@
 
 html {
   min-width: 360px;
-  background-color: black;
-  color: white;
+  background-color: #050505;
+  color: #a3a3a3; /* neutral-400 */
   color-scheme: dark;
 }
 
@@ -60,7 +60,7 @@ html {
   content: '#';
 }
 
-.prose *:hover>.anchor {
+.prose *:hover > .anchor {
   @apply visible;
 }
 
@@ -119,7 +119,7 @@ html {
   @apply list-decimal pl-6;
 }
 
-.prose> :first-child {
+.prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
