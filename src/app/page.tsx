@@ -1,8 +1,6 @@
 import { Hero } from '../components/hero';
 import { BookCall } from '../components/book-call';
 import Experience from '../components/experience';
-import { Projects } from '../components/projects';
-import { Stack } from '../components/stack';
 import { Footer } from '../components/footer';
 import { experience } from '../config/experience';
 
