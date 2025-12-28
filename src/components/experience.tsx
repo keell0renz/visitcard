@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 
 interface ExperienceItem {
@@ -36,10 +39,17 @@ const formatYCBatch = (batch: string): string => {
 };
 
 export default function Experience({ experiences }: ExperienceProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const displayedExperiences = isExpanded
+    ? experiences
+    : experiences.slice(0, 2);
+  const hasMore = experiences.length > 2;
+
   return (
     <section id="experience" className="mb-8">
       <div className="relative border-l border-neutral-800 ml-2 space-y-12 py-2">
-        {experiences.map((exp, index) => (
+        {displayedExperiences.map((exp, index) => (
           <div key={index} className="relative pl-8 group">
             {/* Timeline Dot */}
             <div className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border border-neutral-800 bg-neutral-800 group-hover:border-white/20 group-hover:bg-purple-500 transition-colors"></div>
@@ -97,6 +107,53 @@ export default function Experience({ experiences }: ExperienceProps) {
           </div>
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-4 flex justify-center">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="group flex items-center gap-2 text-xs font-mono text-neutral-500 hover:text-neutral-300 transition-colors uppercase tracking-widest bg-neutral-900/50 px-4 py-2 rounded-full border border-neutral-800 hover:border-neutral-700 cursor-pointer"
+          >
+            {isExpanded ? (
+              <>
+                <span>Show less</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:-translate-y-0.5 transition-transform"
+                >
+                  <path d="m18 15-6-6-6 6" />
+                </svg>
+              </>
+            ) : (
+              <>
+                <span>View {experiences.length - 2} more</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:translate-y-0.5 transition-transform"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </>
+            )}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
+      className="border-t border-white/5 pt-6 pb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 w-full mt-auto"
     >
       <div>
         <p className="text-base text-white font-medium mb-1">
