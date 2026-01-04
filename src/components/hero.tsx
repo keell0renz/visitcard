@@ -28,24 +28,34 @@ export function Hero() {
           <a
             href="mailto:bogdan122305@gmail.com"
             className="text-neutral-500 hover:text-white transition-colors"
+            aria-label="Email Bohdan Agarkov"
           >
             <Mail className="w-5 h-5" />
           </a>
           <a
             href="https://github.com/keell0renz/"
             className="text-neutral-500 hover:text-white transition-colors"
+            aria-label="GitHub profile"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Github className="w-5 h-5" />
           </a>
           <a
             href="https://t.me/keellorenz"
             className="text-neutral-500 hover:text-white transition-colors"
+            aria-label="Telegram profile"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Send className="w-5 h-5" />
           </a>
           <a
             href="https://www.linkedin.com/in/bohdan-agarkov-87937a276/"
             className="text-neutral-500 hover:text-white transition-colors"
+            aria-label="LinkedIn profile"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Linkedin className="w-5 h-5" />
           </a>

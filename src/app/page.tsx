@@ -6,15 +6,11 @@ import { experience } from '../config/experience';
 
 export default function Page() {
   return (
-    <>
-      <div className="max-w-2xl mx-auto px-6 pb-20">
-        <Hero />
-        <BookCall />
-        <Experience experiences={experience} />
-        {/* <Projects /> */}
-        {/* <Stack /> */}
-        <Footer />
-      </div>
-    </>
+    <div className="max-w-2xl mx-auto px-6 pb-20">
+      <Hero />
+      <BookCall />
+      <Experience experiences={experience} />
+      <Footer />
+    </div>
   );
 }

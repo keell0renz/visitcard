@@ -11,23 +11,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import resume from '../config/resume';
 import { homedir } from 'os';
-
-// Format YC batch like in experience.tsx
-const formatYCBatch = (batch: string): string => {
-  const parts = batch.split(' ');
-  const season = parts[0];
-  const year = parts[1];
-
-  const seasonMap: { [key: string]: string } = {
-    Summer: 'S',
-    Spring: 'X',
-    Fall: 'F',
-    Winter: 'W',
-  };
-
-  const seasonLetter = seasonMap[season] || season.charAt(0);
-  return `${seasonLetter}${year.slice(-2)}`;
-};
+import { formatYCBatch } from '../utils/format';
 
 // ATS-friendly styles - using standard fonts, simple layout, no tables
 const styles = StyleSheet.create({
@@ -395,6 +379,7 @@ async function generateResume() {
 
     // Write the PDF file
     fs.writeFileSync(outputPath, new Uint8Array(nodeBuffer));
+    console.log(`✅ Resume generated successfully at: ${outputPath}`);
   } catch (error) {
     console.error('❌ Error generating resume:', error);
     process.exit(1);
