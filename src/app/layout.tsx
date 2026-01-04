@@ -15,14 +15,24 @@ export const metadata: Metadata = {
     default: 'Bohdan Agarkov',
     template: '%s | Bohdan Agarkov',
   },
-  description: 'This is my portfolio.',
+  description:
+    'Software Engineer, focused on generative AI and full-stack development. I am interested in SWE, AI, economics and sentience.',
   openGraph: {
     title: 'Bohdan Agarkov',
-    description: 'This is my portfolio.',
+    description:
+      'Software Engineer, focused on generative AI and full-stack development. I am interested in SWE, AI, economics and sentience.',
     url: baseUrl,
     siteName: 'Bohdan Agarkov',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og',
+        width: 1200,
+        height: 630,
+        alt: 'Bohdan Agarkov - Software Engineer',
+      },
+    ],
   },
   robots: {
     index: true,
